@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Maestro;
+  src: url(../fonts/maestro.ttf);
+}
+
+#maestroTesting {
+  display: none;
+  font-family: Maestro;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+  background: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vmax;
+  font-weight: 400;
+  color: #fcfcfc;
+}
+#mainContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#audioChooseButton {
+  position: absolute;
+  top: 1vmax;
+  left: 1vmax;
+  width: 5vmax;
+  height: 5vmax;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/speaker.png);
+  background-size: 4vmax;
+  opacity: 0.3;
+  cursor: pointer;
+}
+#audioChooseButton:hover { opacity: 1.0; }
+#audioChooseMenu {
+  visibility: hidden;
+  position: absolute;
+  top: 1vmax;
+  left: 7vmax;
+}
+  .audioOption {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 0.5vmax;
+    padding: 0.7vmax;
+    border-radius: 0.8vmax;
+    background: linear-gradient(#666,#444);
+    font-size: 45%;
+    font-weight: 300;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .audioOption:hover {
+    color: #e8e8e8;
+  }
+  .audioOption:active {
+    background: linear-gradient(#616161, #494949);
+  }
+  #currentAudioOption {
+    font-weight: 400;
+    color: #2bd92b;
+    background: linear-gradient(#646464, #464646);
+  }
+#centeredContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#speedDisplay {
+  text-align: center;
+  padding-right: 3.5vmax;
+}
+  #speedTextDisplay {
+    display: inline-block;
+    float: left;
+  }
+    #speedText {
+      font-size: 250%;
+      line-height: 80%;
+      outline: none;
+    }
+    #bpmText {
+      font-size: 100%;
+      line-height: 90%;
+    }
+  #speedArrowsDisplay {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 50px;
+  }
+    .bpmButton {
+      position: absolute;
+      right: 0;
+      width: 3vmax;
+      height: 3vmax;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 2.5vmax;
+      opacity: 0.3;
+      cursor: pointer;
+    }
+    .bpmButton:hover {
+      opacity: 1.0;
+    }
+    #upArrow { top: 0; background-image: url(../images/up_arrow.png); }
+    #playButton { top: calc(50% - 1.5vmax); background-image: url(../images/play.png); background-size: 2vmax; }
+    #downArrow { bottom: 0; background-image: url(../images/down_arrow.png); }

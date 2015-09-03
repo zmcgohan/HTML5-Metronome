@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>HTML5 Metronome</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100italic,100,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div id="maestroTesting">&#169;</div>
+    <div id="mainContainer">
+      <div id="audioChooseButton"></div>
+      <div id="audioChooseMenu"></div>
+      <div id="centeredContainer">
+        <div id="speedDisplay">
+          <div id="speedTextDisplay">
+            <div id="speedText" contenteditable="true">--</div>
+            <div id="bpmText">BPM</div>
+          </div>
+          <div id="upArrow" class="bpmButton"></div>
+          <div id="playButton" class="bpmButton"></div>
+          <div id="downArrow" class="bpmButton"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/metronome.js"></script>
+  </body>
+</html>

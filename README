@@ -1,0 +1,18 @@
+HTML5 Metronome
+
+Designed for quick, intuitive use for both desktop and mobile environments,
+this metronome provides a simple way of timing yourself while playing music.
+
+Hence, metronome.
+
+Valid BPM range: 10-250
+
+Ways to change BPM:
+  - Click on current BPM to edit it
+  - Scroll up/down on page
+  - Press up/down arrows
+  - Arrows next to BPM (obv)
+
+Ways to start/stop metronome:
+  - Press Enter/spacebar
+  - "Play" button next to BPM (obv)
